@@ -1,0 +1,94 @@
+\documentclass[10pt]{moderncv}
+\usepackage[margin=1in]{geometry}
+\usepackage[english]{babel}
+\usepackage{enumitem}
+\usepackage{multicol}
+\usepackage{etoolbox}
+\patchcmd{\makehead}% <cmd>
+{0.8\textwidth}% <search>
+{\textwidth}% <replace>
+{}{}% <success><failure
+\recomputelengths
+
+\moderncvtheme[blue]{classic}
+
+\newcommand*{\dateofbirth}[1]{\def\@dateofbirth{#1}}
+
+\firstname{"First Name"}
+\familyname{"Last Name"}
+\title{"Title or Occupation"}
+
+
+\address{}{City}{Country}
+\mobile{Phone Number}
+\email{Email}
+\dateofbirth{Date of Birth}
+\social[linkedin]{"Username"}
+\social[github]{"Username"}
+
+
+
+
+\setlength{\hintscolumnwidth}{2cm}
+\setlength{\separatorcolumnwidth}{1em}
+\setlength{\columnsep}{2em}
+
+\begin{document}
+	\maketitle
+\section{Personal Details}
+	\cvitem{About Me}{Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a}
+	\cvitem{Birth}{Date}
+	\cvitem{Nationality}{Add Nationality}
+	\begin{multicols}{2}
+		\setlength{\maincolumnwidth}{\linewidth-\leftskip-\rightskip-\separatorcolumnwidth-\hintscolumnwidth}
+		
+\section{Experience}
+
+\cventry{years}{degree or job title}{institution or employer}{city}{grade}{\begin{itemize}[label=\textbullet]
+		\item bullet item 1 
+		\item bullet item 2
+		\item bullet item 3 
+	\end{itemize}}
+
+\cventry{years}{degree or job title}{institution or employer}{city}{grade}{\begin{itemize}[label=\textbullet]
+		\item bullet item 1 
+		\item bullet item 2
+		\item bullet item 3 
+\end{itemize}}
+
+\cventry{years}{degree or job title}{institution or employer}{city}{grade}{\begin{itemize}[label=\textbullet]
+		\item bullet item 1 
+		\item bullet item 2
+		\item bullet item 3 
+\end{itemize}}
+
+\cventry{years}{degree or job title}{institution or employer}{city}{grade}{\begin{itemize}[label=\textbullet]
+		\item bullet item 1 
+		\item bullet item 2
+		\item bullet item 3 
+\end{itemize}}
+
+\cventry{years}{degree or job title}{institution or employer}{city}{grade}{\begin{itemize}[label=\textbullet]
+		\item bullet item 1 
+		\item bullet item 2
+		\item bullet item 3 
+\end{itemize}}
+
+
+\section{Skills}
+\cvlistitem{add skills here}
+\cvlistitem{add skills here}
+\cvlistitem{add skills here}
+
+\section{Language Skills}
+	\cvlanguage{language}{Fluent}{}
+	\cvlanguage{Urdu}{Fluent(Speaking)}{}
+\section{Education}
+
+\cventry{Date}{Degree}{University}{city, country}{}{}
+\cventry{Date}{Degree}{University}{city, country}{}{}
+\cventry{Date}{Degree}{University}{city, country}{}{}
+
+\end{multicols}
+
+\end{document}
